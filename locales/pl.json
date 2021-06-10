@@ -39,11 +39,11 @@
 		},
 		"aria-meter-name": {
 			"description": "Każdy węzeł meter oparty na ARIA ma dostępną nazwę.",
-			"help": "Węzły liczników ARIA muszą mieć dostępną nazwę."
+			"help": "Węzły metter ARIA muszą mieć dostępną nazwę."
 		},
 		"aria-progressbar-name": {
 			"description": "Każdy węzeł paska postępu (progressbar) ARIA ma dostępną nazwę.",
-			"help": "Węzły paska postępu ARIA muszą mieć dostępną nazwę."
+			"help": "Węzły pasków postępu ARIA muszą mieć dostępną nazwę."
 		},
 		"aria-required-attr": {
 			"description": "Elementy z rolami ARIA mają wszystkie wymagane atrybuty ARIA.",
@@ -55,7 +55,7 @@
 		},
 		"aria-required-parent": {
 			"description": "Elementy z rolą ARIA, które wymagają ról nadrzędnych, są zawarte w elementach z takimi rolami.",
-			"help": "Niektóre role ARIA muszą być ograniczone przez poszczególnych rodziców."
+			"help": "Niektóre role ARIA muszą być wewnątrz określonych elementów rodziców."
 		},
 		"aria-roledescription": {
 			"description": "Atrybut aria-roledescription jest używany tylko w elementach, które mają rolę określoną domyślnie lub jawnie.",
@@ -67,15 +67,15 @@
 		},
 		"aria-toggle-field-name": {
 			"description": "Każdy przełącznik (toggle) ARIA ma dostępną nazwę.",
-			"help": "Pola przełączników ARIA muszą mieć dostępną nazwę."
+			"help": "Przełączniki ARIA muszą mieć dostępną nazwę."
 		},
 		"aria-tooltip-name": {
 			"description": "Każdy węzeł podpowiedzi (tooltip) ARIA ma dostępną nazwę.",
-			"help": "Węzły narzędziowe ARIA muszą mieć dostępną nazwę."
+			"help": "Węzły tooltip ARIA muszą mieć dostępną nazwę."
 		},
 		"aria-treeitem-name": {
 			"description": "Każdy węzeł drzewa elementów (treitem) ARIA ma dostępną nazwę.",
-			"help": "Węzły drzewiaste ARIA muszą mieć dostępną nazwę."
+			"help": "Węzły drzewa elementów ARIA muszą mieć dostępną nazwę."
 		},
 		"aria-valid-attr-value": {
 			"description": "Wszystkie atrybuty ARIA mają poprawne wartości.",
@@ -199,7 +199,7 @@
 		},
 		"input-button-name": {
 			"description": "Przyciski input type=button mają postrzegalny tekst.",
-			"help": "Przyciski wejściowe muszą mieć rozpoznawalny tekst."
+			"help": "Przyciski input type=button muszą mieć postrzegalny tekst."
 		},
 		"input-image-alt": {
 			"description": "Elementy <input type=\"image\"> mają tekst alternatywny.",
@@ -275,7 +275,7 @@
 		},
 		"meta-refresh": {
 			"description": "<meta http-equiv=\"refresh\" nie jest używane.",
-			"help": "Automatyczne odświeżenie nie być stosowane."
+			"help": "Automatyczne odświeżenie strony nie być stosowane."
 		},
 		"meta-viewport-large": {
 			"description": "Element <meta name=\"viewport\"> umożliwia znaczne powiększanie.",
@@ -542,7 +542,7 @@
 		},
 		"accesskeys": {
 			"pass": "Wartość atrybutu accesskey jest unikalna.",
-			"fail": "Dokument posiada wiele elementów z tym samym klawiszem dostępu."
+			"fail": "Dokument ma wiele elementów z tym samym klawiszem dostępu."
 		},
 		"focusable-content": {
 			"pass": "Element zawiera elementy przyjmujące fokus.",
