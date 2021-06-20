@@ -26,8 +26,8 @@
 			"help": "Okno dialogowe ARIA i węzły alertdialog muszą mieć dostępną nazwę."
 		},
 		"aria-hidden-body": {
-			"description": "W korpusie dokumentu nie ma atrybutu aria-hidden='true'.",
-			"help": "W korpusie dokumentu nie może być atrybutu aria-hidden='true'."
+			"description": "Element <body> nie ma atrybutu aria-hidden='true'.",
+			"help": "Element <body> nie może być atrybutu aria-hidden='true'."
 		},
 		"aria-hidden-focus": {
 			"description": "Elementy z aria-hidden nie mogą obejmować elementów przyjmujących fokus.",
@@ -62,7 +62,7 @@
 			"help": "Użyj aria-roledescription w elementach o roli semantycznej."
 		},
 		"aria-roles": {
-			"description": "Zapewnia, że wszystkie elementy z atrybutem roli używają prawidłowej wartości.",
+			"description": "Wszystkie elementy z atrybutem roli używają prawidłowej wartości.",
 			"help": "Stosowane role ARIA muszą być zgodne z obowiązującymi wartościami."
 		},
 		"aria-toggle-field-name": {
@@ -99,7 +99,7 @@
 		},
 		"blink": {
 			"description": "Elementy <blink> nie są używane.",
-			"help": "Elementy <blink> elementy są przestarzałe i nie mogą być używane."
+			"help": "Elementy <blink> są przestarzałe i nie mogą być używane."
 		},
 		"button-name": {
 			"description": "Przyciski mają postrzegalny tekst.",
@@ -150,12 +150,12 @@
 			"help": "Elementy w porządku fokusowania muszą mieć rolę odpowiednią dla treści interaktywnych."
 		},
 		"form-field-multiple-labels": {
-			"description": "Pole formularza nie posiada wielu  etykiet (elementów label).",
+			"description": "Pole formularza nie ma wielu  etykiet (elementów label).",
 			"help": "Pole formularza nie powinno zawierać wielu elementów label."
 		},
 		"frame-tested": {
-			"description": "Elementy <iframe> i <frame> zawierają skrypt axe-core.",
-			"help": "Ramki muszą być testowane ze skryptem axe-core."
+			"description": "Elementy <iframe> i <frame> muszą być testowane z axe-core.",
+			"help": "Ramki muszą być testowane z axe-core."
 		},
 		"frame-title-unique": {
 			"description": "Elementy <frame> i <frame> mają unikalny atrybut title.",
@@ -187,7 +187,7 @@
 		},
 		"identical-links-same-purpose": {
 			"description": "Łącza o tej samej dostępnej nazwie służą temu samemu celowi.",
-			"help": "Łącza o tej samej nazwie mają podobny cel."
+			"help": "Łącza o tej samej nazwie mają ten sam cel."
 		},
 		"image-alt": {
 			"description": "Elementy <img> mają atrybut alt lub rolę none albo presentation.",
@@ -203,14 +203,14 @@
 		},
 		"input-image-alt": {
 			"description": "Elementy <input type=\"image\"> mają tekst alternatywny.",
-			"help": "Przyciski graficzne musza mieć tekst alternatywny."
+			"help": "Przyciski graficzne muszą mieć tekst alternatywny."
 		},
 		"label-content-name-mismatch": {
 			"description": "Elementy oznakowane poprzez ich treść muszą mieć swój widoczny tekst jako część ich dostępnej nazwy.",
 			"help": "Elementy muszą mieć swój widoczny tekst jako część ich dostępnej nazwy."
 		},
 		"label-title-only": {
-			"description": "żaden element formularza nie jest oznaczony wyłącznie za pomocą atrybutu title lub aria-describedby.",
+			"description": "Żaden element formularza nie jest oznaczony wyłącznie za pomocą atrybutu title lub aria-describedby.",
 			"help": "Element formularza powinien mieć widoczną etykietę."
 		},
 		"label": {
@@ -286,7 +286,7 @@
 			"help": "Powiększanie i skalowanie nie może być wyłączone."
 		},
 		"no-autoplay-audio": {
-			"description": "Elementy <video> lub <audio> nie odtwarzają automatycznie  przez dłużej niż 3 sekundy dźwięku, bez mechanizmu, który go zatrzymuje lub wycisza.",
+			"description": "Elementy <video> lub <audio> nie odtwarzają automatycznie przez dłużej niż 3 sekundy dźwięku bez mechanizmu, który go zatrzymuje lub wycisza.",
 			"help": "Elementy <video> lub <audio> nie odtwarzają dźwięku automatycznie."
 		},
 		"object-alt": {
@@ -408,8 +408,8 @@
 			}
 		},
 		"aria-hidden-body": {
-			"pass": "Nie ma żadnego atrybutu aria-hidden w korpusie dokumentu.",
-			"fail": "Atrybutu aria-hidden=true nie może być w korpusie dokumentu."
+			"pass": "Nie ma żadnego atrybutu aria-hidden w elemencie <body> dokumentu.",
+			"fail": "Atrybutu aria-hidden=true nie może być w elemencie <body> dokumentu."
 		},
 		"aria-required-attr": {
 			"pass": "Wszystkie wymagane atrybuty ARIA istnieją.",
@@ -506,7 +506,7 @@
 			"fail": "Element ma niewystarczający kontrast kolorów: ${data.contrastRatio} (foreground color: ${data.fgColor}, background color: ${data.bgColor}, font size: ${data.fontSize}, font weight: ${data.fontWeight}). Oczekiwany współczynnik kontrastu:  ${data.expectedContrastRatio}.",
 			"incomplete": {
 				"default": "Nie można określić współczynnika kontrastu.",
-				"bgImage": "Nie można określić koloru tła elementu, ponieważ element obraz tła.",
+				"bgImage": "Nie można określić koloru tła elementu, ponieważ element ma obraz tła.",
 				"bgGradient": "Nie można określić koloru tła elementu, ponieważ element ma gradientowe tło.",
 				"imgNode": "Nie można określić koloru tła elementu, ponieważ element zawiera węzeł obrazu.",
 				"bgOverlap": "Nie można określić koloru tła elementu, ponieważ nakłada się na niego inny element.",
@@ -599,11 +599,11 @@
 		},
 		"alt-space-value": {
 			"pass": "Element ma poprawną wartość atrybutu alt.",
-			"fail": "Element ma atrybut alt zawierający tylko znak spacji, który nie jest ignorowany przez wszystkie czytniki ekranu."
+			"fail": "Element ma atrybut alt zawierający tylko znak spacji, który nie przez wszystkie czytniki ekranu jest ignorowany ."
 		},
 		"duplicate-img-label": {
 			"pass": "Element nie powiela tekstu istniejącego w atrybucie alt elementu <img>.",
-			"fail": "Element powiela tekstu istniejący w atrybucie alt elementu <img>."
+			"fail": "Element powiela tekst istniejący w atrybucie alt elementu <img>."
 		},
 		"explicit-label": {
 			"pass": "Element formularza ma jawnie określoną <label>.",
@@ -612,7 +612,7 @@
 		},
 		"help-same-as-label": {
 			"pass": "Tekst pomocy (title lub aria-describedby) nie powiela tekstu etykiety.",
-			"fail": "Tekst pomocy (title or aria-describedby) jest taki sam jak tekst etykiety."
+			"fail": "Tekst pomocy (title lub aria-describedby) jest taki sam jak tekst etykiety."
 		},
 		"hidden-explicit-label": {
 			"pass": "Element formularza ma widoczną jednoznaczną <label>.",
@@ -634,7 +634,7 @@
 		},
 		"title-only": {
 			"pass": "Element formularza nie używa wyłącznie atrybutu title jako swojej etykiety.",
-			"fail": "Tylko atrybt title jest używany do wygenerowania etykiety dla elementu formularza."
+			"fail": "Tylko atrybut title jest używany do wygenerowania etykiety dla elementu formularza."
 		},
 		"landmark-is-unique": {
 			"pass": "Punkty orientacyjne muszą mieć unikalną kombinację roli lub roli etykiety i tytułu (tj. dostępną nazwę).",
@@ -671,7 +671,7 @@
 			"fail": "Element listy ma wewnątrz bezpośrednie elementy dzieci, które nie są dozwolone wewnątrz listy opisowej."
 		},
 		"only-listitems": {
-			"pass": "Element lista ma wewnątrz tylko dozwolone  jako bezpośrednie elementy potomne (dzieci) elementy <li>.",
+			"pass": "Element lista ma wewnątrz tylko dozwolone jako bezpośrednie elementy potomne (dzieci) elementy <li>.",
 			"fail": {
 				"default": "Element lista ma niedozwolone bezpośrednie elementy potomne (dzieci), poza elementami <li>.",
 				"roleNotValid": "Element lista ma bezpośrednie elementy potomne (dzieci) z rolą, która nie jest dozwolona: ${data.role}."
@@ -692,11 +692,11 @@
 		},
 		"no-autoplay-audio": {
 			"pass": "Element <video> lub <audio> nie emituje dźwięku przez czas dłuższy niż dozwolony lub posiada mechanizm sterujący.",
-			"fail": "Element <video> lub <audio> emituje dźwięk przez czas dłuższy niż dozwolony  i nie posiada mechanizmu sterowania.",
+			"fail": "Element <video> lub <audio> emituje dźwięk przez czas dłuższy niż dozwolony i nie posiada mechanizmu sterowania.",
 			"incomplete": "Sprawdź, czy <video> lub <audio> nie emituje dźwięku dłuższej niż przez dozwolony czas lub czy ma mechanizm sterujący."
 		},
 		"css-orientation-lock": {
-			"pass": "Wyświetlacz działa sprawnie,  orientacja nie jest blokowana.",
+			"pass": "Wyświetlacz działa sprawnie, orientacja nie jest blokowana.",
 			"fail": "Zastosowano blokadę orientacji wyświetlacza, w rezultacie wyświetlacz nie działa sprawnie.",
 			"incomplete": "Nie można blokować orientacji wyświetlacza za pomocą ustawień CSS."
 		},
@@ -729,7 +729,7 @@
 			"fail": "Strona nie ma żadnego punktu orientacyjnego (obszaru kluczowego)."
 		},
 		"meta-refresh": {
-			"pass": "Znacznik <meta> nie odświeża  od razu strony.",
+			"pass": "Znacznik <meta> nie odświeża od razu strony.",
 			"fail": "Znacznik <meta> wymusza odświeżenie strony."
 		},
 		"p-as-heading": {
@@ -743,7 +743,7 @@
 		"skip-link": {
 			"pass": "Cel łącza pomijajacego istnieje.",
 			"incomplete": "Cel łącza pomijania powinien być widoczny po aktywacji.",
-			"fail": "Nie ma celu łącza pomijającego."
+			"fail": "Nie istniej cel łącza pomijającego."
 		},
 		"unique-frame-title": {
 			"pass": "Atrybut title elementu jest unikalny.",
@@ -758,7 +758,7 @@
 			"fail": "W dokumencie jest wiele elementów, do których odnosi się ARIA z tym samym atrybutem id: ${data}."
 		},
 		"duplicate-id": {
-			"pass": "W dokumencie nie ma wielu elementów statycznych z  takim samym atrybutem id.",
+			"pass": "W dokumencie nie ma wielu elementów statycznych z takim samym atrybutem id.",
 			"fail": "W dokumencie jest wiele elementów statycznych z takim samym atrybutem id: ${data}."
 		},
 		"aria-label": {
@@ -774,7 +774,7 @@
 			"pass": "Nie określono żadnych stylów inline z '!important', które wpływają na odstępy w tekście.",
 			"fail": {
 				"singular": "Usuń dyrektywę '!important' ze stylu inline ${data.values}, ponieważ nadpisywanie tego nie jest obsługiwane przez większość przeglądarek.",
-				"plural": "Usuń dyrektywy '!important' ze styłów inline ${data.values}, ponieważ nadpisywanie tego nie jest obsługiwane przez większość przeglądarek."
+				"plural": "Usuń dyrektywy '!important' ze stylów inline ${data.values}, ponieważ nadpisywanie tego nie jest obsługiwane przez większość przeglądarek."
 			}
 		},
 		"button-has-visible-text": {
@@ -841,7 +841,7 @@
 		"presentational-role": {
 			"pass": "Domyślna semantyka elementu została zastąpiona przez role=\"${data.role}\".",
 			"fail": {
-				"default": "Domyślna semantyka elementu nie została nadpisana przez role=\"none\" ma ani role=\"presentation\".",
+				"default": "Domyślna semantyka elementu nie została nadpisana przez role=\"none\" ani role=\"presentation\".",
 				"globalAria": "Rola elementu nie jest prezentacyjna, ponieważ ma on ogólny atrybut ARIA.",
 				"focusable": "Rola elementu nie jest prezentacyjna, ponieważ może on przyjmować fokus.",
 				"both": "Rola elementu nie jest prezentacyjna, ponieważ ma on ogólny atrybut ARIA i może przyjmować fokus."
@@ -872,7 +872,7 @@
 			"fail": "W HTML 5, atrybuty scope mogą być używane tylko w elementach nagłówkowych tabeli (<th>)."
 		},
 		"same-caption-summary": {
-			"pass": "Treść atrybutu summary i <caption> nie są powielane.",
+			"pass": "Treści atrybutu summary i <caption> nie są powielane.",
 			"fail": "Treści atrybutu summary i elementu <caption> są identyczne."
 		},
 		"scope-value": {
